@@ -20,17 +20,28 @@ export function Experience() {
               aria-hidden="true"
               className="absolute -left-[1.625rem] top-7 size-2.5 rounded-full border border-border-strong bg-primary sm:-left-[2.375rem]"
             />
+
             <article className="panel panel-hover p-6">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h3 className="font-display text-lg tracking-[0.06em]">{job.company}</h3>
-                <span className="font-mono text-xs text-muted-foreground">{job.period}</span>
+                <h3 className="font-display text-lg tracking-[0.06em]">
+                  {job.company}
+                </h3>
+
+                <span className="font-mono text-xs text-muted-foreground">
+                  {job.period}
+                </span>
               </div>
+
               <p className="mt-1 text-sm text-primary-glow">
                 {job.role} · {job.mode}
               </p>
+
               <ul className="mt-4 space-y-2">
                 {job.points.map((point) => (
-                  <li key={point} className="flex gap-3 text-sm text-muted-foreground">
+                  <li
+                    key={point}
+                    className="flex gap-3 text-sm text-muted-foreground"
+                  >
                     <span
                       aria-hidden="true"
                       className="mt-1.5 size-1.5 shrink-0 rounded-full bg-border-strong"
@@ -39,26 +50,22 @@ export function Experience() {
                   </li>
                 ))}
               </ul>
+
               {job.documents ? (
-                <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                <div className="mt-5 flex flex-wrap gap-3">
                   {job.documents.map((document) => (
                     <a
-                      key={document.image}
-                      href={document.image}
+                      key={document.link}
+                      href={document.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group overflow-hidden rounded-lg border border-border bg-surface-2"
+                      className="inline-flex items-center gap-2 rounded-md border border-border-strong bg-surface-2 px-3 py-2 text-xs font-medium text-primary-glow transition-colors hover:border-primary-glow"
                     >
-                      <img
-                        src={document.image}
-                        alt={`${job.company} ${document.label}`}
-                        loading="lazy"
-                        className="aspect-[1.4/1] w-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.02]"
+                      {document.label}
+                      <ExternalLink
+                        className="size-3"
+                        aria-hidden="true"
                       />
-                      <span className="flex items-center justify-between gap-2 border-t border-border px-3 py-2 text-xs font-medium text-primary-glow">
-                        {document.label}
-                        <ExternalLink className="size-3" aria-hidden="true" />
-                      </span>
                     </a>
                   ))}
                 </div>

@@ -1,4 +1,6 @@
-import resumeAsset from "@/assets/Vipparthi_Hasvanth_Kumar_Data_Engineer.pdf.asset.json";
+const resumeAsset = {
+  url: "/resume/Vipparthi_Hasvanth_Kumar_Data_Engineer.pdf",
+};
 const profileImage = {
   url: "/images/profile.jpeg",
 };

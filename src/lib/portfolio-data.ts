@@ -1,14 +1,44 @@
-import profileImage from "@/assets/profile.jpeg.asset.json";
 import resumeAsset from "@/assets/Vipparthi_Hasvanth_Kumar_Data_Engineer.pdf.asset.json";
-import linkedin1 from "@/assets/linkedin-1.png.asset.json";
-import linkedin2 from "@/assets/linkedin-2.png.asset.json";
-import salesDashboard from "@/assets/sales-dashboard.png.asset.json";
-import stockMarket from "@/assets/stock-market.jpg.asset.json";
-import stockPrediction from "@/assets/stock-prediction.jpg.asset.json";
-import genthreat from "@/assets/genthreat.jpg.asset.json";
-import biometric from "@/assets/biometric.jpg.asset.json";
-import cryptoPcaOutput from "@/assets/crypto-pca-output.jpg.asset.json";
-import cryptoDashboard from "@/assets/crypto-dashboard.jpg.asset.json";
+const profileImage = {
+  url: "/images/profile.jpeg",
+};
+
+
+const linkedin1 = {
+  url: "/images/linkedin-1.png",
+};
+
+const linkedin2 = {
+  url: "/images/linkedin-2.png",
+};
+
+const salesDashboard = {
+  url: "/images/sales-dashboard.png",
+};
+
+const stockMarket = {
+  url: "/images/stock-market.png",
+};
+
+const stockPrediction = {
+  url: "/images/stock-prediction.png",
+};
+
+const genthreat = {
+  url: "/images/genthreat.jpg",
+};
+
+const biometric = {
+  url: "/images/biometric.jpeg",
+};
+
+const cryptoPcaOutput = {
+  url: "/images/crypto-pca-output.jpeg",
+};
+
+const cryptoDashboard = {
+  url: "/images/crypto-dashboard.jpeg",
+};
 import codecInternshipCertificate from "@/assets/codec-internship-certificate.jpg.asset.json";
 import syntecxhubInternshipCertificate from "@/assets/syntecxhub-internship-certificate.jpg.asset.json";
 import googleGenerativeAiCertificate from "@/assets/google-generative-ai-certificate.jpg.asset.json";
@@ -86,10 +116,14 @@ export const experience = [
       "Built Power BI dashboards using Power Query, relationships, and DAX.",
       "Used SQL and Excel to analyze business performance metrics.",
     ],
-   documents: [
-  { label: "Internship certificate", image: syntecxhubInternshipCertificate.url },
-],
+    documents: [
+      {
+        label: "View internship certificate",
+        link: "/certificates/Syntecxhub-Data-Analysis-Internship.pdf",
+      },
+    ],
   },
+
   {
     company: "CODEC TECHNOLOGIES",
     role: "Data Analytics Intern",
@@ -101,8 +135,14 @@ export const experience = [
       "Prepared structured datasets for comparative analysis.",
       "Created analytical reports and visualizations for operational metrics.",
     ],
-    documents: [{ label: "Internship certificate", image: codecInternshipCertificate.url }],
+    documents: [
+      {
+        label: "View internship certificate",
+        link: "/certificates/Codec-Technologies-Data-Analytics-Internship.pdf",
+      },
+    ],
   },
+
   {
     company: "NILTECH-EDU",
     role: "Java Intern",
@@ -115,7 +155,10 @@ export const experience = [
       "Resolved technical issues through systematic troubleshooting.",
     ],
     documents: [
-      { label: "Java internship certificate", image: niltechJavaInternshipCertificate.url },
+      {
+        label: "View internship certificate",
+        link: "/certificates/Niltech-EDU-Java-Internship.jpg",
+      },
     ],
   },
 ];
@@ -242,36 +285,58 @@ export const education = [
 ];
 
 export const certifications = [
-  { name: "Data Analytics Essentials", issuer: "Cisco", date: "July 2026" },
-  { name: "Data Fundamentals", issuer: "IBM" },
+  {
+    name: "Data Analytics Essentials",
+    issuer: "Cisco",
+    date: "July 2026",
+    link: "https://www.credly.com/badges/062c5894-d86b-43d3-814c-e75224a1efca/linked_in_profile",
+  },
+
+  {
+    name: "Data Fundamentals",
+    issuer: "IBM",
+    date: "June 2026",
+    link: "https://www.credly.com/badges/0065fc02-acd8-46ad-b9f9-e6cd1166ee02/linked_in_profile",
+  },
+
   {
     name: "Data Analytics Job Simulation",
     issuer: "Deloitte Australia",
-    image: deloitteDataAnalyticsCertificate.url,
+    date: "November 2025",
+    link: "/certificates/Deloitte-Data-Analytics-Job-Simulation.pdf",
   },
+
   {
     name: "GenAI Powered Data Analytics Job Simulation",
     issuer: "Tata",
-    image: tataGenaiCertificate.url,
+    date: "June 2026",
+    link: "/certificates/Tata-GenAI-Powered-Data-Analytics-Job-Simulation.pdf",
   },
+
   {
     name: "Programming in Python with AI",
     issuer: "Internshala",
     date: "September 2026",
-    images: [internshalaPythonTrainingCertificate.url, internshalaSkillIndiaCertificate.url],
+    links: [
+      "/certificates/Internshala-Python-with-AI-Training.pdf",
+      "/certificates/Skill-India-NSDC-Python-with-AI.pdf",
+    ],
   },
+
   {
     name: "Introduction to Generative AI Studio",
-    issuer: "Google Cloud",
-    image: googleGenerativeAiCertificate.url,
+    issuer: "Google Cloud / Simplilearn SkillUp",
+    date: "November 2025",
+    link: "/certificates/Introduction-to-Generative-AI-Studio.pdf",
   },
+
   {
     name: "Technology Job Simulation",
     issuer: "Deloitte Australia",
-    image: deloitteTechnologyCertificate.url,
+    date: "January 2026",
+    link: "/certificates/Deloitte-Technology-Job-Simulation.pdf",
   },
 ];
-
 export const achievements = [
   "College Chess Champion",
   "3rd Place – College Badminton Tournament",

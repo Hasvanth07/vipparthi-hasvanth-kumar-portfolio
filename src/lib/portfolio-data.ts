@@ -10,7 +10,6 @@ import biometric from "@/assets/biometric.jpg.asset.json";
 import cryptoPcaOutput from "@/assets/crypto-pca-output.jpg.asset.json";
 import cryptoDashboard from "@/assets/crypto-dashboard.jpg.asset.json";
 import codecInternshipCertificate from "@/assets/codec-internship-certificate.jpg.asset.json";
-import syntecxhubInternshipOffer from "@/assets/syntecxhub-internship-offer.jpg.asset.json";
 import syntecxhubInternshipCertificate from "@/assets/syntecxhub-internship-certificate.jpg.asset.json";
 import googleGenerativeAiCertificate from "@/assets/google-generative-ai-certificate.jpg.asset.json";
 import deloitteDataAnalyticsCertificate from "@/assets/deloitte-data-analytics-certificate.jpg.asset.json";
@@ -87,10 +86,9 @@ export const experience = [
       "Built Power BI dashboards using Power Query, relationships, and DAX.",
       "Used SQL and Excel to analyze business performance metrics.",
     ],
-    documents: [
-      { label: "Internship offer", image: syntecxhubInternshipOffer.url },
-      { label: "Internship certificate", image: syntecxhubInternshipCertificate.url },
-    ],
+   documents: [
+  { label: "Internship certificate", image: syntecxhubInternshipCertificate.url },
+],
   },
   {
     company: "CODEC TECHNOLOGIES",

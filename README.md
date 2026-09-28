@@ -1,29 +1,74 @@
-# Welcome to your Lovable project
+# Vipparthi Hasvanth Kumar — Data Engineer Portfolio
 
-This project was built with [Lovable](https://lovable.dev).
+Personal portfolio website showcasing my background, technical skills, internships, projects, certifications, and achievements.
 
-## Build with Lovable
+## About
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+This portfolio presents my journey as an aspiring Data Engineer, with a focus on Python, SQL, data engineering concepts, ETL/ELT, data pipelines, databases, analytics, and cloud technologies.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+## Features
 
-## Development
+- Professional portfolio website
+- Responsive design for desktop and mobile
+- Project showcase with screenshots and technical details
+- Internship and experience section
+- Certifications section with certificate previews
+- Resume download
+- Contact form
+- Secure admin dashboard
+- Contact submission management
+- Portfolio analytics
+- Visitor and project engagement tracking
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Tech Stack
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
-
-## Built with
-
-- TanStack Start
-- TypeScript
 - React
+- TypeScript
+- TanStack Start
 - Tailwind CSS
+- Supabase
+- PostgreSQL
+- Git
+- GitHub
+
+## Portfolio Sections
+
+- Home
+- About
+- Skills
+- Experience
+- Projects
+- Education
+- Certifications
+- Achievements
+- Contact
+
+## Projects
+
+The portfolio showcases projects involving:
+
+- Data Analytics
+- Data Visualization
+- Python
+- SQL
+- Machine Learning
+- API-based applications
+- Data Engineering
+
+## Data Engineering Focus
+
+My current career focus is Data Engineering, with an interest in building reliable data workflows, databases, ETL/ELT pipelines, and data-driven applications.
+
+## Local Development
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Hasvanth07/vipparthi-hasvanth-kumar-portfolio.git

@@ -13,7 +13,9 @@ const linkedin1 = {
 const linkedin2 = {
   url: "/images/linkedin-2.png",
 };
-
+const linkedinDashboard = {
+  url: "/images/linkedin-dashboard.png",
+};
 const salesDashboard = {
   url: "/images/sales-dashboard.png",
 };
@@ -192,7 +194,7 @@ export const projects: Project[] = [
       "Designed workflows for storing, updating, and managing contact information.",
       "Deployed the application on Vercel and maintained source code through GitHub.",
     ],
-    images: [linkedin1.url, linkedin2.url],
+    images: [linkedin1.url, linkedin2.url, linkedinDashboard.url],
 github: "https://github.com/Hasvanth07/linkedin-message-personalizer",
   },
   {

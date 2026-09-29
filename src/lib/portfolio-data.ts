@@ -193,6 +193,7 @@ export const projects: Project[] = [
       "Deployed the application on Vercel and maintained source code through GitHub.",
     ],
     images: [linkedin1.url, linkedin2.url],
+github: "https://github.com/Hasvanth07/linkedin-message-personalizer",
   },
   {
     slug: "sales-performance-dashboard",
@@ -206,7 +207,8 @@ export const projects: Project[] = [
       "Designed interactive dashboards with KPI cards, slicers, and multi-dimensional visualizations.",
       "Presented sales trends and performance patterns through interactive reports.",
     ],
-    images: [salesDashboard.url],
+   images: [salesDashboard.url],
+github: "https://github.com/Hasvanth07/Sales-Performance-Dashboard",
   },
   {
     slug: "stock-market-tracker",

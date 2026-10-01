@@ -10,7 +10,9 @@ export function Footer() {
           <div>
             <p className="font-display text-lg tracking-[0.06em]">{profile.name}</p>
             <p className="mt-2 text-sm text-primary-glow">{profile.title}</p>
-            <p className="mt-2 font-mono text-xs text-muted-foreground">{profile.tagline}</p>
+            <p className="mt-2 font-mono text-xs text-muted-foreground">
+              {profile.tagline}
+            </p>
           </div>
 
           <div className="flex gap-2">
@@ -24,6 +26,7 @@ export function Footer() {
             >
               <Github className="size-4" aria-hidden="true" />
             </a>
+
             <a
               href={profile.linkedin}
               target="_blank"
@@ -34,6 +37,7 @@ export function Footer() {
             >
               <Linkedin className="size-4" aria-hidden="true" />
             </a>
+
             <a
               href={`mailto:${profile.email}`}
               aria-label="Email"
@@ -44,10 +48,48 @@ export function Footer() {
           </div>
         </div>
 
-        <p className="mt-10 font-mono text-xs text-muted-foreground">
+        <div className="mt-10 overflow-hidden border-y border-border/60 py-3">
+          <div className="flex w-max animate-footer-marquee motion-reduce:animate-none">
+            <div className="shrink-0 px-8 font-mono text-xs text-muted-foreground">
+              Thanks for visiting my portfolio! 🚀 • Building, learning, and growing
+              toward becoming a Data Engineer.
+            </div>
+            <div
+              className="shrink-0 px-8 font-mono text-xs text-muted-foreground"
+              aria-hidden="true"
+            >
+              Thanks for visiting my portfolio! 🚀 • Building, learning, and growing
+              toward becoming a Data Engineer.
+            </div>
+          </div>
+        </div>
+
+        <p className="mt-6 text-center font-mono text-xs text-muted-foreground">
           © 2026 Vipparthi Hasvanth Kumar. All rights reserved.
         </p>
       </div>
+
+      <style>{`
+        @keyframes footer-marquee {
+          0% {
+            transform: translateX(-50%);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+
+        .animate-footer-marquee {
+          animation: footer-marquee 18s linear infinite alternate;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .animate-footer-marquee {
+            animation: none;
+            transform: translateX(0);
+          }
+        }
+      `}</style>
     </footer>
   );
 }
